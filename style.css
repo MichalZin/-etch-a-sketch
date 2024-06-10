@@ -1,0 +1,44 @@
+.input-zone {
+    display: flexbox;
+}
+
+input {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+button {
+    padding: 10px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 500px;
+    border: 5px black solid;
+    border-radius: 10px;
+    background: gainsboro;
+}
+
+.div1 {
+    border: 10px red;
+    width: 100px;
+    height: 100px;
+    background: red;
+    padding: 5px
+}
+
+.div2 {
+    border: 10px yellow;
+    width: 100px;
+    height:100px;
+    background:ghostwhite;
+    padding:5px;
+    margin:5px
+
+}
+.div2:hover {
+    background: blue;
+}
