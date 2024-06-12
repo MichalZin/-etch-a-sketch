@@ -12,28 +12,26 @@ areaNumber.addEventListener("submit", (e) => {
     let numberCount = document.getElementById('input').value;
 
     const repeatDiv = () => {
+        boxArea.innerHTML = '';
+        
         for (let i=0; i<numberCount; i++) {
             const newDiv = document.createElement("div");
             newDiv.classList.add("div2");
             boxArea.appendChild(newDiv);
         }
+        if (!numberCount) {
+            alert ('Insert value betweeen 16 and 100')
+        } else {
+        canvas.appendChild(boxArea)}
     }
     repeatDiv()
     
+let resetButton = document.getElementById('reset')
+
+resetButton.addEventListener("click", () => {
+    boxArea.textContent = '';
+    canvas.removeChild(canvas.firstChild);
     
-    canvas.appendChild(boxArea)
 })
-/*
-
-const repeatDiv = () => {
-    for (let i=0; i<time; i++) {
-        const newDiv = document.createElement("div");
-        newDiv.classList.add("div2");
-        boxArea.appendChild(newDiv);
-    }
-}
-repeatDiv()
-
-
-canvas.appendChild(boxArea)
-*/
+    
+})
