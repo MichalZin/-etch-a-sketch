@@ -25,13 +25,11 @@ areaNumber.addEventListener("submit", (e) => {
         canvas.appendChild(boxArea)}
     }
     repeatDiv()
-    
+})  
 let resetButton = document.getElementById('reset')
 
 resetButton.addEventListener("click", () => {
-    boxArea.textContent = '';
     canvas.removeChild(canvas.firstChild);
     
 })
     
-})
